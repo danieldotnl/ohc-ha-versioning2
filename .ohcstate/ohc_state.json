@@ -7,6 +7,14 @@
     "last_changed": "2025-02-25T11:21:50.744483Z",
     "state": "on"
   },
+  "automation.announce_sunrise": {
+    "automation_id": "1740512740108",
+    "entity_id": "automation.announce_sunrise",
+    "friendly_name": "Announce sunrise",
+    "is_deleted": false,
+    "last_changed": "2025-02-25T19:45:48.217295Z",
+    "state": "on"
+  },
   "automation.awtrix_notify_person": {
     "automation_id": "1724596059328",
     "entity_id": "automation.awtrix_notify_person",

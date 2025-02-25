@@ -1,0 +1,14 @@
+id: '1740512740108'
+alias: Announce sunrise
+description: ''
+triggers:
+- trigger: sun
+  event: sunrise
+  offset: 0
+conditions: []
+actions:
+- action: assist_satellite.announce
+  metadata: {}
+  data:
+    message: De zon is nu op!
+mode: single
