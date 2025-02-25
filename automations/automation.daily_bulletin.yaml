@@ -1,13 +1,12 @@
 id: '1709671068704'
 alias: Daily briefing
 description: ''
-trigger:
-- platform: time
-  at: 07:00:00
-condition: []
-action:
-- service: calendar.get_events
-  target:
+triggers:
+- at: 07:00:00
+  trigger: time
+conditions: []
+actions:
+- target:
     entity_id:
     - calendar.home_assistant
   data:
@@ -16,11 +15,11 @@ action:
       }}'
   response_variable: hacalender
   enabled: true
-- service: notify.mobile_app_iphone_drd6vjx62h
-  data:
+  action: calendar.get_events
+- data:
     data:
       url: /our-home/tech
-    title: Your daily briefing
+    title: Your daily briefing!
     message: "{%- set date = as_timestamp(now()) -%} {% set day = [\"Zondag\", \"\
       Maandag\", \"Dinsdag\", \"Woensdag\", \"Donderdag\", \"Vrijdag\", \"Zaterdag\"\
       ] %} {% set month = [\"Januari\", \"Februari\", \"Maart\", \"April\", \"Mei\"\
@@ -41,4 +40,5 @@ action:
       \ {{ event.summary }}\n      {%- if event.location is defined %}\n        Location:\
       \ {{ event.location }}\n      {% endif -%}\n    {%- endfor %}\n  {%- endfor\
       \ %}"
+  action: notify.mobile_app_iphone_drd6vjx62h
 mode: single
