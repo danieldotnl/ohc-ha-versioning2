@@ -12,7 +12,7 @@
     "entity_id": "automation.announce_sunrise",
     "friendly_name": "Announce sunrise",
     "is_deleted": false,
-    "last_changed": "2025-02-25T21:28:27.553812Z",
+    "last_changed": "2025-02-25T21:42:31.849171Z",
     "state": "on"
   },
   "automation.awtrix_notify_person": {

@@ -10,5 +10,5 @@ actions:
 - action: assist_satellite.announce
   metadata: {}
   data:
-    message: De zon is nu helemaal op!
+    message: De zon is nu op!
 mode: single
